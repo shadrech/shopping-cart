@@ -46,14 +46,10 @@ export const ItemWrapperDiv = styled.div`
   }
 `;
 
-interface QuantityInputProps {
-  $hasError: boolean;
-}
-
-export const QuantityInput = styled.input<QuantityInputProps>`
+export const QuantityInput = styled.input`
   width: 35%;
   height: 2rem;
-  border: 1px solid ${({ $hasError }) => $hasError ? 'red' : '#d4d4d4'};
+  border: 1px solid #d4d4d4;
   border-radius: 0;
 `;
 

@@ -39,7 +39,6 @@ export const CartItem: React.FC<Props> = ({ item }) => {
         type="number"
         value={typeof item.quantity === 'number' ? item.quantity : ''}
         onChange={handleQtyChange}
-        $hasError={!!error}
       />
       {error && <ErrorMessage>{error}</ErrorMessage>}
       <PriceP>{currencyFormat(item.price)}</PriceP>

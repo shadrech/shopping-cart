@@ -22,7 +22,13 @@ export const SummarySection = styled.section`
   align-items: center;
 `;
 
+export const ErrorMessage = styled.p`
+  color: red;
+  text-align: center;
+`;
+
 export const ItemWrapperDiv = styled.div`
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,12 +36,24 @@ export const ItemWrapperDiv = styled.div`
   border-bottom: 1px dotted #d4d4d4;
   margin: 0.25rem 0;
   padding: 0.25rem 0;
+
+  ${ErrorMessage} {
+    font-size: 0.75rem;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    margin: 0;
+  }
 `;
 
-export const QuantityInput = styled.input`
+interface QuantityInputProps {
+  $hasError: boolean;
+}
+
+export const QuantityInput = styled.input<QuantityInputProps>`
   width: 35%;
   height: 2rem;
-  border: 1px solid #d4d4d4;
+  border: 1px solid ${({ $hasError }) => $hasError ? 'red' : '#d4d4d4'};
   border-radius: 0;
 `;
 
@@ -85,9 +103,4 @@ export const CheckoutButton = styled.button`
     cursor: pointer;
     background: ${({ theme }) => theme.secondaryBlue};
   }
-`;
-
-export const ErrorMessage = styled.p`
-  color: red;
-  text-align: center;
 `;

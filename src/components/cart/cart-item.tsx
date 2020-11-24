@@ -33,14 +33,14 @@ export const CartItem: React.FC<Props> = ({ item }) => {
   }
 
   return (
-    <ItemWrapperDiv>
+    <ItemWrapperDiv data-testid="cartItem">
       <NameP>{item.name}</NameP>
       <QuantityInput
         type="number"
         value={typeof item.quantity === 'number' ? item.quantity : ''}
         onChange={handleQtyChange}
       />
-      {error && <ErrorMessage>{error}</ErrorMessage>}
+      {error && <ErrorMessage data-testid="errorMessage">{error}</ErrorMessage>}
       <PriceP>{currencyFormat(item.price)}</PriceP>
       <BorderlessButton onClick={handleDelete}>x</BorderlessButton>
     </ItemWrapperDiv>

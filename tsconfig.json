@@ -1,5 +1,5 @@
 {
-  "include": ["src"],
+  "include": ["src", "src/jest", "config.ts"],
   "compilerOptions": {
     "module": "esnext",
     "lib": ["dom", "esnext"],
@@ -17,6 +17,10 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": "src",
+    "paths": {
+      "~test-utils": ["./jest/utils"]
+    }
   }
 }

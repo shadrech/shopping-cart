@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Cart /> renders and displays all items 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdfBwQ bOjPMT"
+  >
+    <section>
+      <div
+        class="sc-hKgILt TWQQb"
+        data-testid="cartItem"
+      >
+        <p
+          class="sc-gKsewC hyWlBL"
+        >
+          Pasta
+        </p>
+        <input
+          class="sc-eCssSg brXOyM"
+          type="number"
+          value="0"
+        />
+        <p
+          class="sc-iBPRYJ frAHyf"
+        >
+          $0.58
+        </p>
+        <button
+          class="sc-fubCfw eJBkJK"
+        >
+          x
+        </button>
+      </div>
+      <div
+        class="sc-hKgILt TWQQb"
+        data-testid="cartItem"
+      >
+        <p
+          class="sc-gKsewC hyWlBL"
+        >
+          Eggs
+        </p>
+        <input
+          class="sc-eCssSg brXOyM"
+          type="number"
+          value="0"
+        />
+        <p
+          class="sc-iBPRYJ frAHyf"
+        >
+          $0.21
+        </p>
+        <button
+          class="sc-fubCfw eJBkJK"
+        >
+          x
+        </button>
+      </div>
+      <div
+        class="sc-hKgILt TWQQb"
+        data-testid="cartItem"
+      >
+        <p
+          class="sc-gKsewC hyWlBL"
+        >
+          Toilet Roll
+        </p>
+        <input
+          class="sc-eCssSg brXOyM"
+          type="number"
+          value="0"
+        />
+        <p
+          class="sc-iBPRYJ frAHyf"
+        >
+          $1.30
+        </p>
+        <button
+          class="sc-fubCfw eJBkJK"
+        >
+          x
+        </button>
+      </div>
+    </section>
+    <section
+      class="sc-gsTCUz eHqvDi"
+    >
+      <p
+        class="sc-jSgupP khyoCi"
+        data-testid="cartTotal"
+      >
+        $0.00
+      </p>
+      <button
+        class="sc-fubCfw eJBkJK"
+        data-testid="clearButton"
+      >
+        Clear
+      </button>
+      <button
+        class="sc-pFZIQ jOMUqo"
+      >
+        check out &gt;
+      </button>
+    </section>
+  </div>
+  ;
+</DocumentFragment>
+`;

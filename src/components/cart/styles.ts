@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const CartWrapperDiv = styled.div`
-  margin: 50% auto 0;
+  margin: 50vh auto 0;
   width: 30rem;
   max-width: 90vw;
   transform: translateY(-50%);

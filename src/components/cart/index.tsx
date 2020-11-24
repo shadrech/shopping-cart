@@ -19,7 +19,7 @@ export const Cart: React.FC = () => {
     <CartWrapperDiv>
       <section>
         {itemsArr.map(item => <CartItem key={item.SKU} item={item} />)}
-        {!itemsArr.length && <ErrorMessage>There are no items in the basket</ErrorMessage>}
+        {!itemsArr.length && <ErrorMessage data-testid="errorMessage">There are no items in the basket</ErrorMessage>}
       </section>
       <CartSummary />
     </CartWrapperDiv>
